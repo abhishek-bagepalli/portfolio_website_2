@@ -939,6 +939,9 @@ hr {
         margin: 0;
         padding: 0;
     }
+    .exp_img:hover+.company p {
+        display: none;
+    }
     .experience {
         display: flex;
         flex-direction: column;
