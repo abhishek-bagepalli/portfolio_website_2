@@ -1,0 +1,983 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* transition: 0.3s all ease-in-out; */
+}
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url('../bg.png');
+    /* filter: brightness(50%); */
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    opacity: 100;
+    /* overflow: hidden; */
+}
+.container{
+    color: white;
+    /* border: 2px solid red; */
+    margin: 2vh auto;
+    /* padding: 1vh; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.temp{
+    color: darkcyan;
+    margin: 1vh auto;
+    /* position: fixed; */
+    /* border: 1px solid white; */
+    border-radius: 1vh;
+    /* height: 60vh; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background:  rgba(4, 104, 104, 0.326); */
+    width: 90%;
+    top: 0;
+    border-bottom: 1px solid darkcyan;
+}
+.certificates{
+    margin: auto;
+}
+.list{
+    /* border: 2px solid red; */
+    padding-top: 1vh;
+    margin: 0 auto;
+    font-size: 3vh;
+    font-family: 'Nixie One', cursive;
+    letter-spacing: 0.5vh;
+    /* padding: 1vh; */
+    transition: 0.3s ease-in-out;
+}
+.list a{
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 1vh;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 1vh;
+    
+}
+
+.list a:hover{
+    transition-delay: 1s;
+    transition: 0.3s ease-in-out;
+    
+}
+.list a span{
+    position: absolute;
+    display: block;
+    
+}
+.list a span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    border-radius: 1vh;
+    background: linear-gradient(90deg,transparent,darkcyan);
+    /* animation: animate1 1s linear infinite; */
+}
+.list a span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,darkcyan);
+    border-radius: 1vh;
+    
+}
+.list a span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,darkcyan);
+    border-radius: 1vh;
+    /* animation: animate1 1s linear infinite; */
+}
+.list a span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,darkcyan);
+    border-radius: 1vh;
+    /* animation: animate1 1s linear infinite; */
+}
+.list a:hover span:nth-child(1)
+{
+    /* background-color: red; */
+    border-radius: 1vh;
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.list a:hover span:nth-child(2)
+{
+    /* background-color: red; */
+    border-radius: 1vh;
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.list a:hover span:nth-child(3)
+{
+    /* background-color: red; */
+    border-radius: 1vh;
+    animation: animate3 1s linear infinite;
+    /* animation-delay: 0.5s; */
+}
+@keyframes animate3
+{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+.list a:hover span:nth-child(4)
+{
+    /* background-color: red; */
+    border-radius: 1vh;
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate4
+{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+.title{
+    /* text-align: center; */
+    margin-left: 1vh;
+    width: 80%;
+    padding: 1vh;
+    font-size: 2.8vh;
+    /* border: 2px solid blue; */
+}
+.icon{
+    /* border: 2px solid red; */
+    /* text-align: center; */
+    display: flex;
+    font-size: 3vh;
+    display: none;
+    /* padding-top: 1vh; */
+}
+
+
+.introcontainer, .certificatecontainer, .projectcontainer, .contactcontainer{
+    /* position: relative;  */
+    width: 100%;
+    /* border: 1px solid white; */
+    padding: 1vh;
+    margin: 1vh auto; 
+    transition: 0.3s;
+    border-radius: 1vh;
+}
+.introcontainer h1, .certificatecontainer h1, .projectcontainer h1, .contactcontainer h1{
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.829);
+    /* border: 2px solid red; */
+    font-size: 8vh;
+    /* text-decoration:solid; */
+    /* margin-left: 10vh; */
+    /* text-align: center; */
+    /* font-family: 'Forum', cursive; */
+    font-family: 'Nixie One', cursive;
+    margin-bottom: 7vh;
+    margin-left: 10vh;
+    margin-top: 5vh;
+    letter-spacing: 1vh;
+}
+.about{
+    position: relative; 
+    /* border: 2px solid grey; */
+    /* padding: 1vh; */
+    margin: 1vh auto;
+}
+.about-h2, .education-h2, .experience-h2{
+    display: inline-block;
+    margin-left: 2vh;
+    font-size: 4vh;
+    letter-spacing: 0.5vh;
+    border-bottom: 1px solid darkcyan;
+    color: white;
+    /* border-radius: 1vh; */
+    padding: 0.5vh;
+    
+    text-align: center;
+    
+    font-family: 'Nixie One', cursive;
+    /* width: 11%; */
+    
+    /* border-bottom: 1px solid darkcyan; */
+}
+.education-h2{
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.experience-h2{
+    margin-bottom: 5vh;
+    
+    /* border: 2px solid white; */
+}
+
+
+.about p{
+    /* border: 2px solid red; */
+    font-size: 3vh;
+    padding: 2vh;
+    margin-left: 10vh;
+    margin-top: 5vh;
+    
+    letter-spacing: 0.2vh;
+    font-family: 'Nixie One', cursive;
+    text-align: center;
+
+}
+.education{
+    /* padding: 3vh 1vh; */
+    position: relative; 
+    /* border: 2px solid blue; */
+    /* margin: 1vh auto; */
+    margin-top: 4.5vh;
+    /* font-size: 2.5vh; */
+    /* margin-bottom: 2vh; */
+    /* text-align: center; */
+    
+}
+
+.education ul li{
+    list-style: none;
+}
+.experience{
+    position: relative; 
+    /* border: 2px solid purple; */
+    /* margin: 5vh auto; */
+    margin-top: 4.5vh;
+}
+
+
+
+
+.exp_container{
+    margin-left: 10vh;
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    
+    padding: 1vh;
+    justify-content: center;
+    
+    border-radius: 1vh;
+    font-family: 'Nixie One', cursive;
+}
+.exp_img{
+    /* border: 2px solid white; */
+    border-top: 2px solid rgba(255, 255, 255, 0.819);
+    border-left: 2px solid rgba(255, 255, 255, 0.819);
+    border-right: 2px solid rgba(0, 139, 139, 0.655);
+    border-bottom: 2px solid rgba(0, 139, 139, 0.655);
+    width: 10vh;
+    height: 10vh;
+    border-radius: 1vh;
+    transition: 0.3s all;
+    padding: 0.5vh;
+}
+.exp_img:hover{
+    border-top: 2px solid rgba(0, 139, 139, 0.655);
+    border-left: 2px solid rgba(0, 139, 139, 0.655);
+    border-right: 2px solid rgba(255, 255, 255, 0.819);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.819);
+    /* box-shadow: 5px -5px 10px rgba(0, 139, 139, 0.655); */
+    transition: 0.3s all;
+}
+.exp_img:hover+.company p{
+    transition: 0.3s all ea;
+    display: block;
+}
+.exp_img img{
+    border-radius: 1vh;
+    width: 100%;
+    filter: brightness(90%);
+}
+.company{
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 5vh;
+}
+.work{
+    /* border-top: 1px solid darkcyan; */
+    border-radius: 0;
+    /* border: 2px solid royalblue; */
+    
+    
+}
+
+
+.exp{
+    margin-left: 5vh;
+    padding-top: 1vh;
+    width: 80%;
+    text-align: left;
+    /* padding-left: 1vh; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left; */
+    padding-left: 1vh;
+    font-size: 2.2vh;
+    transition: 0.3s all ease-in-out;
+}
+.school{
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    font-size: 3vh;
+}
+.company{
+    font-size: 3vh;
+    display: flex;
+    /* text-align: center; */
+    /* align-items: center; */
+}
+
+.company p{
+    transition: 0.3s all ease-in-out;
+    /* border: 1px solid red; */
+    margin-left: 2vh;
+    text-align: left;
+    padding: 1vh;
+    font-size: 2.3vh;
+    display: none;
+}
+
+.first_work_para{
+    margin-top: 3vh;
+}
+hr{
+    margin-bottom: 1vh;
+    width: 50%;
+    display: none;
+}
+.toggle{
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    
+    /* margin-top: 1vh; */
+    /* margin-left: 15vh; */
+
+    /* top: 1vh; */
+    
+    width: 50px;
+    height: 50px;
+    background: #242682ba;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.temp.active{
+    width: 20vh;
+    /* margin-right: 1vh; */
+}
+.toggle.active{
+   background: red;
+}
+.toggle ion-icon{
+    position: absolute;
+    color: white;
+    font-size: 34px;
+    display: none;
+}
+.toggle ion-icon.open,
+.toggle.active ion-icon.close{
+    display: block;
+}
+.toggle ion-icon.close,
+.toggle.active ion-icon.open{
+    display: none;
+}
+.navigation-small{
+    display: none;
+}
+.homeprofile{
+    color: white;
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Nixie One', cursive;
+}
+.info{
+    /* border: 2px solid white; */
+    padding-top: 5vh;
+    padding-left: 10vh;
+}
+.hello{
+    font-size: 4vh;
+    margin-bottom: 3vh;
+    /* margin-left: 1vh; */
+}
+.name{
+    /* font-family: 'Oswald', sans-serif; */
+    font-weight: 500;
+    font-size: 8vh;
+    letter-spacing: 0.3vh;
+    border-bottom: 1px solid darkcyan;
+}
+.more{
+    margin-top: 7vh;
+    /* margin-left: 1vh; */
+    /* text-align: center; */
+    font-size: 3.2vh;
+    letter-spacing: 0.3vh;
+}
+.moreinfo{
+    font-size: 2.5vh;
+    margin-top: 3vh;
+    letter-spacing: 0.2vh;
+}
+.myimage{
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+    margin-left: 20vh;
+    padding: 1vh;
+    margin-top: 2vh;
+}
+.myimage img{
+    border: 1px solid rgba(0, 139, 139, 0);
+    box-shadow: 0 1px 10px darkcyan;
+    border-radius: 1000vh;
+    /* border-bottom-left-radius: 1vh;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 5vh; */
+
+    height: 50vh;
+    filter: brightness(90%);
+    /* width: 100%; */
+}
+.buttons{
+    /* border: 2px solid red; */
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.buttons a{
+    /* border: 2px solid white; */
+    margin: 0 5vh;
+}
+.buttons a button{
+    font-size: 2.2vh;
+    
+    color: white;
+    padding: 1vh;
+    background: transparent;
+    font-family: 'Nixie One', cursive;
+    letter-spacing: 0.3vh;
+    border-radius: 1vh;
+    transition: 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid darkcyan;
+}
+.buttons a button:hover{
+    /* background: darkcyan; */
+    border: 1px solid darkcyan;
+    box-shadow: 0 1px 10px darkcyan;
+    
+}
+.certificatecontainer{
+    color: white;
+    font-family: 'Nixie One', cursive;
+    
+}
+.certificates_both{
+    /* border: 2px solid white; */
+    display: flex;
+    height: 70vh;
+    padding: 1vh;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.certificatenames{
+    width: 30vh;
+    /* margin-left: 10vh; */
+    display: inline block;
+    color: white;
+    font-size: 10px;
+    /* border: 2px solid blue; */
+    /* float: left; */
+    /* margin-right: 5vh; */
+    margin-left: 20vh;
+    transition: 0.3s ease-in-out;
+}
+.certificatelist{
+    /* padding-top: 0; */
+    width: 85%;
+    display: flex;
+    margin-left: 20vh;
+    text-align: left;
+    /* justify-content:center; */
+    /* align-items: center; */
+    /* padding-top: 40px; */
+    /* border: 2px solid red; */
+    /* transition: .4s ease-in-out; */
+    /* margin-left: 40vh; */
+
+}
+.cname{
+    
+    text-align: center;
+    /* width: 10%; */
+    padding: 1vh 0;
+    font-size: 3.5vh;
+    margin-bottom: 2vh;
+    border-radius: 1vh;
+    /* background-color:  #242682ba; */
+    font-family: 'Nixie One', cursive;
+    position: relative;
+    transition: 0.1s all;
+    /* display: inline-block; */
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid darkcyan;
+}
+
+.cname:hover{
+    background-color: rgba(7, 7, 7, 0.375);
+    transition: 0.2s ease-in-out;
+    border: 1px solid darkcyan;
+    cursor: pointer;
+    box-shadow: 0 0 10px darkcyan;
+}
+
+.gen{
+    /* border: 1px solid blue; */
+    /* margin-left: 20vh; */
+    
+    color: white;
+    font-size: larger;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* box-sizing: border-box; */
+    /* transition: all 0.5s linear; */
+    
+}
+.ibm .yale .google .olympiads .sports .other .nasa{
+    transition: .3s ease-in-out;
+}
+.gen ul{
+    /* border: 1px solid darkcyan; */
+    font-size: 10px;
+    /* background-color: #242682ba; */
+    border-radius: 1vh;
+    padding: 20px;
+    /* width: auto; */
+    
+}
+.gen ul li{
+    margin: 20px 15px;
+    /* text-align: center; */
+    font-size: 2.5em;
+    /* font-family: 'Source Code Pro', monospace; */
+    list-style: none;
+    /* background-color: red; */
+}
+.gen ul li a{
+    text-decoration: none;
+    color: white;
+    /* font-size: larger; */
+}
+.project{
+    /* border: 2px solid red; */
+    margin: 3vh auto;
+    padding: 1vh;
+    font-family: 'Nixie One', cursive;
+}
+.ptitle{
+    display: inline-block;
+    padding: 0.5vh 1vh;
+    border-bottom: 1px solid darkcyan;
+    /* border-radius: 1vh; */
+    margin-bottom: 5vh;
+    font-size: 4vh;
+    letter-spacing: 0.5vh;
+}
+.project p{
+    font-size: 3vh;
+    letter-spacing: 0.2vh;
+    margin-left: 10vh;
+}
+.contactdetails{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    /* align-items: center; */
+    justify-content:center ;
+    margin-bottom: 10vh;
+}
+.contactdetailscontainer{
+    /* border: 2px solid blue; */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nixie One', cursive;
+    
+}
+.contactpicture{
+    /* border: 2px solid white; */
+    width: 20%;
+    margin-bottom: 1vh;
+}
+.contactpicture img{
+    width: 100%;
+}
+.contactform{
+    /* border: 2px solid white; */
+    margin-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 10vh; */
+}
+.mb-3{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    margin: 1vh 0;
+    padding: 1vh;
+    text-align: center;
+}
+.form-control{
+    /* border: 2px solid blue; */
+    margin: 1vh 0;
+}
+.form-label{
+    font-family: 'Nixie One', cursive;
+    font-size: 3vh;
+}
+.address{
+    font-family: 'Nixie One', cursive;
+    margin-bottom: 1vh;
+    font-size: 2.5vh;
+    letter-spacing: 0.2vh;
+}
+.address a{
+    text-decoration: none;
+    color: white;
+}
+
+.contactbutton{
+    font-size: 2.2vh;
+    width: 30%;
+    color: white;
+    margin: auto;
+    padding: 1vh;
+    background: transparent;
+    font-family: 'Nixie One', cursive;
+    letter-spacing: 0.3vh;
+    border-radius: 1vh;
+    transition: 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid darkcyan;
+}
+.contactbutton:hover{
+    border: 1px solid darkcyan;
+    box-shadow: 0 1px 10px darkcyan;
+}
+.gmailwhatsapp{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    /* align-items: center; */
+    justify-content:center ;
+}
+
+@media (max-width: 1215px) {
+    .container{
+        width: 100%;
+    }
+    .temp{
+        display: none;
+    }
+    .navigation-small{
+        /* display: flex; */
+        /* flex-direction: row; */
+        border-bottom: 2px solid darkcyan;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 7vh;
+        width: 90%;
+        /* padding: 2vh; */
+        margin: 2vh auto;
+        background: transparent;
+        border-radius: 1vh;
+        font-family: 'Source Code Pro', monospace;
+        
+    }
+    .navitem a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.704);
+    }
+    .navitem{
+        margin: auto;
+    }
+    
+    .navitem ion-icon{
+        font-size: 4vh;
+        font-weight: lighter;
+    }
+    .introcontainer h1, .certificatecontainer h1, .projectcontainer h1, .contactcontainer h1{
+        
+        text-align: center;
+        font-size: 5vh;
+        margin: 0 5vh auto;
+        letter-spacing: 0.3vh;
+        margin-top: 0;
+        margin-bottom: 7vh;
+    }
+    .about{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .about-h2, .education-h2, .experience-h2{
+        padding: 0.5vh 1vh;
+        margin: 2vh auto;
+        font-size: 3.5vh;
+        text-align: center;
+        /* width: 35%; */
+        font-family: 'Nixie One', cursive;
+        letter-spacing: 0.3vh;
+        /* font-weight: bold; */
+    }
+    .about p{
+        font-size: 2.3vh;
+        margin: 1vh auto;
+    }
+    .education{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .exp_container{
+        /* border: 2px solid green; */
+        margin: 0 auto;
+    }
+    .exp{
+        margin: 0 auto;
+        font-size: 2vh;
+    }
+    .experience{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactdetails{
+        margin-top: 5vh;
+        
+        margin-bottom: 3vh;
+        /* border: 2px solid red; */
+    }
+    .contactdetailscontainer{
+        /* border: 2px solid blue; */
+        margin: 0 3vh;
+    }
+    .contactpicture{
+        width: 60%;
+    }
+    .address{
+        
+        font-size: 2vh;
+    }
+    .contactform{
+        /* margin: 0; */
+        /* border: 2px solid red; */
+        margin-bottom: 4vh;
+    }
+    .gmailwhatsapp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    .detailslong{
+        width: 90%;
+        text-align: center;
+    }
+    .contactpicturelong{
+        width: 15%;
+    }
+    .contactpicturelong img{
+        width: 100%;
+    }
+    .long{
+        margin-bottom: 5vh;
+        text-align: center;
+        /* border: 2px solid red; */
+        width: 100%;
+        font-family: 'Nixie One', cursive;
+    }
+    .homeprofile{
+        /* border: 2px solid red; */
+        padding: 0;
+        margin: 1vh auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .myimage{
+        display: none;
+    }
+    .info{
+        /* border: 2px solid blue; */
+        /* width: 100%; */
+        /* height: 100%; */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        /* text-align: center; */
+    }
+    .hello{
+        width: 90%;
+        font-size: 4vh;
+        /* text-align: left; */
+    }
+    .name{
+        
+        width: 90%;
+        /* border: 2px solid red; */
+        font-size: 6vh;
+    }
+    .more{
+        /* border: 2px solid red; */
+        width: 90%;
+        font-size: 2.8vh;
+    }
+    .moreinfo{
+        /* border: 2px solid red; */
+        width: 90%;
+        font-size: 2.3vh;
+    }
+    .buttons{
+        /* border: 2px solid red; */
+        margin: 5vh auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons a{
+        margin: 2vh auto;
+    }
+    .certificatecontainer{
+        /* border: 2px solid red; */
+        height: fit-content;
+        margin: 0 auto;
+        width: 90%;        
+    }
+    .certificates_both{
+        /* border: 2px solid red; */
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .certificatenames{
+        
+        margin: 0;
+    }
+    .cname{
+        font-size: 3.5vh;
+        border-bottom: 2px solid darkcyan;
+        letter-spacing: 0.3vh;
+    }
+    .certificatelist{
+        /* border: 2px solid red; */
+        width: 100%;
+        text-align: left;
+        margin: 0;
+    }
+    .projectcontainer{
+        padding: 1vh;
+    }
+    .gen ul li{
+        font-size: 3vh;
+        letter-spacing: 0.5vh;
+    }
+    .ptitle{
+        font-size: 3.5vh;
+        letter-spacing: 0.3vh;
+    }
+    .project p{
+        
+        margin: 0;
+        font-size: 2.8vh;
+        letter-spacing: 0.3vh;
+    }
+    .contactbutton{
+        font-size: 2.5vh;
+        padding: 0.5vh;
+    }
+    
+}
