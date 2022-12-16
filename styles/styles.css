@@ -1140,9 +1140,10 @@ hr {
         margin-left: 3vh;
     }
 
-    .contactbutton {
+    .contactbutton{
+        width: 50%;
         font-size: 2.5vh;
-        padding: 0.5vh;
+        padding: 1vh 2vh;
     }
     .contactboth{
         flex-direction: column;
