@@ -47,6 +47,7 @@ body {
     width: 90%;
     top: 0;
     border-bottom: 1px solid darkcyan;
+    /* box-shadow: 0 0.5vh 1vh darkcyan; */
 }
 
 .certificates {
@@ -56,7 +57,7 @@ body {
 .list {
     /* border: 2px solid red; */
     padding-top: 1vh;
-    margin: 0 auto;
+    margin: 0.5vh auto;
     font-size: 3vh;
     font-family: 'Nixie One', cursive;
     letter-spacing: 0.5vh;
@@ -71,16 +72,21 @@ body {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    padding: 1vh;
-    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 1vh 1.5vh;
+    border: 2px solid rgba(227, 219, 219, 0);
     border-radius: 1vh;
 
 }
 
 .list a:hover {
+    /* color: rgba(0, 255, 255, 0.804); */
     transition-delay: 1s;
     transition: 0.3s ease-in-out;
-
+    transition-delay: .40s; 
+    /* background: rgba(0, 139, 139, 0.715); */
+    box-shadow: 0 0 2vh darkcyan;
+    border: 2px solid darkcyan;
+    
 }
 
 .list a span {
@@ -132,7 +138,7 @@ body {
 .list a:hover span:nth-child(1) {
     /* background-color: red; */
     border-radius: 1vh;
-    animation: animate1 1s linear infinite;
+    animation: animate1 1s linear;
 }
 
 @keyframes animate1 {
@@ -149,7 +155,7 @@ body {
 .list a:hover span:nth-child(2) {
     /* background-color: red; */
     border-radius: 1vh;
-    animation: animate2 1s linear infinite;
+    animation: animate2 1s linear;
     animation-delay: 0.25s;
 }
 
@@ -167,7 +173,7 @@ body {
 .list a:hover span:nth-child(3) {
     /* background-color: red; */
     border-radius: 1vh;
-    animation: animate3 1s linear infinite;
+    animation: animate3 1s linear;
     /* animation-delay: 0.5s; */
 }
 
@@ -185,7 +191,7 @@ body {
 .list a:hover span:nth-child(4) {
     /* background-color: red; */
     border-radius: 1vh;
-    animation: animate4 1s linear infinite;
+    animation: animate4 1s linear;
     animation-delay: 0.25s;
 }
 
@@ -577,7 +583,6 @@ hr {
 
 .buttons a button {
     font-size: 2.2vh;
-
     color: white;
     padding: 1vh 1.5vh;
     background: transparent;
@@ -587,11 +592,12 @@ hr {
     transition: 0.2s;
     /* border: 1px solid rgba(0, 0, 0, 0); */
     /* border-bottom: 1px solid darkcyan; */
-    border: 1px solid darkcyan;
+    border: .20vh solid darkcyan;
 }
 
 .buttons a button:hover {
     /* background: darkcyan; */
+    border: .20vh solid darkcyan;
     box-shadow: 0 0px 3vh darkcyan;
 
 }
