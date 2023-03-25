@@ -98,6 +98,8 @@
             <div class="certificates_both">
                 <div class="certificatenames">
                     <div class="cname  name_1">IBM</div>
+                    <div class="cname  name_8">Amazon</div>
+                    <div class="cname  name_9">Microsoft</div>
                     <div class="cname  name_2">Google</div>
                     <div class="cname  name_3">Yale</div>
                     <div class="cname  name_4">NASA</div>
@@ -132,6 +134,24 @@
                                     <ion-icon name="newspaper-outline"></ion-icon>
                                 </span><a href="./certificates/ibm/Python project for AI and app dev.pdf" target="_blank">
                                     Python project for AI and Application Development</a></li>
+                        </ul>
+                    </div>
+                    <div id="gen" class="gen amazon">
+                        <ul>
+                            <li><span>
+                                    <ion-icon name="newspaper-outline"></ion-icon>
+                                </span><a href="./certificates/AWS Certified Cloud Practitioner certificate.pdf" target="_blank"> Introduction
+                                    to AI</a></li>
+                            
+                        </ul>
+                    </div>
+                     <div id="gen" class="gen microsoft">
+                        <ul>
+                            <li><span>
+                                    <ion-icon name="newspaper-outline"></ion-icon>
+                                </span><a href="./certificates/AZ_900_abhishekbagepalli-8251 _ Microsoft Learn.pdf" target="_blank"> Introduction
+                                    to AI</a></li>
+                            
                         </ul>
                     </div>
                     <div class="gen google">
@@ -245,6 +265,8 @@
         <script>
 
             document.querySelector('.ibm').style.display = 'none'
+            document.querySelector('.amazon').style.display = 'none'
+            document.querySelector('.microsoft').style.display = 'none'
             document.querySelector('.google').style.display = 'none'
             document.querySelector('.nasa').style.display = 'none'
             document.querySelector('.yale').style.display = 'none'
@@ -258,6 +280,8 @@
             document.querySelector('.name_1').addEventListener("click", () => {
                 // console.log('IBM click working')
                 document.querySelector('.certificatelist').style.display = ''
+                document.querySelector('.amazon').style.display = 'none'
+                document.querySelector('.microsoft').style.display = 'none'
                 document.querySelector('.google').style.display = 'none'
                 document.querySelector('.nasa').style.display = 'none'
                 document.querySelector('.yale').style.display = 'none'
@@ -267,6 +291,37 @@
                 document.querySelector('.ibm').style.display = ''
 
                 document.querySelector('.ibm').scrollIntoView({behavior:'smooth'})
+
+            })
+             document.querySelector('.name_8').addEventListener("click", () => {
+                // console.log('IBM click working')
+                document.querySelector('.certificatelist').style.display = ''
+                
+                document.querySelector('.microsoft').style.display = 'none'
+                document.querySelector('.google').style.display = 'none'
+                document.querySelector('.nasa').style.display = 'none'
+                document.querySelector('.yale').style.display = 'none'
+                document.querySelector('.olympiads').style.display = 'none'
+                document.querySelector('.sports').style.display = 'none'
+                document.querySelector('.other').style.display = 'none'
+                document.querySelector('.ibm').style.display = ''
+
+                document.querySelector('.amazon').scrollIntoView({behavior:'smooth'})
+
+            })
+             document.querySelector('.name_9').addEventListener("click", () => {
+                // console.log('IBM click working')
+                document.querySelector('.certificatelist').style.display = ''
+                document.querySelector('.amazon').style.display = 'none'
+                document.querySelector('.google').style.display = 'none'
+                document.querySelector('.nasa').style.display = 'none'
+                document.querySelector('.yale').style.display = 'none'
+                document.querySelector('.olympiads').style.display = 'none'
+                document.querySelector('.sports').style.display = 'none'
+                document.querySelector('.other').style.display = 'none'
+                document.querySelector('.ibm').style.display = ''
+
+                document.querySelector('.microsoft').scrollIntoView({behavior:'smooth'})
 
             })
             document.querySelector('.name_2').addEventListener("click", () => {
