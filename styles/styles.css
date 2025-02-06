@@ -16,9 +16,10 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../bg.png');
     /* filter: brightness(50%); */
     background-attachment: fixed;
-    background-repeat: repeat-y;
+    /* background-repeat: repeat-y; */
     opacity: 100;
     /* overflow: hidden; */
+    width: 100%;
 }
 
 .container {
