@@ -744,10 +744,36 @@ hr {
     font-size: 3vh;
     letter-spacing: 0.2vh;
     margin-left: 22vh;
+    line-height: 1.5;
+}
+.link-to-projects {
+    margin-left: 22vh;
+}
+.project-button {
+    font-size: 3vh;
+    padding: 1.5vh 2vh;
+    border-radius: 1vh;
+    background: transparent;
+    border: 1px solid darkcyan;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.project-button:hover {
+    /* border: 1px solid white; */
+    background-color: darkcyan;
+    color: darkcyan;
+}
+
+.project-button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Nixie One', cursive;
+    letter-spacing: 0.2vh;
 }
 
 .contactdetails {
     width: 50%;
+    margin: 0 auto;
     color: white;
     display: flex;
     flex-direction: column;
