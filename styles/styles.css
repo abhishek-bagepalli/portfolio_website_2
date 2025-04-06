@@ -893,6 +893,8 @@ hr {
 
 
 @media (max-width: 1215px) {
+
+
     .container {
         width: 100%;
     }
@@ -1166,8 +1168,10 @@ hr {
     }
 
     .project p {
-
-        margin: 0;
+        /* border: 2px solid red; */
+        margin: 0 auto;
+        width: 90%;
+        /* text-align: justify; */
         font-size: 2.2vh;
         letter-spacing: 0.3vh;
         margin-left: 3vh;
@@ -1184,5 +1188,22 @@ hr {
     .firstrow, .secondrow{
         flex-direction: column;
     }
-    
+    .project-button {
+    font-size: 2vh;
+    width: 85vw;
+    /* border: 2px solid red; */
+    padding: 1vh 0;
+}
+    .project-button a{
+        /* border: 2px solid green; */
+        padding: 0;
+        margin: 0;
+    }
+    .link-to-projects{
+        /* border: 2px solid blue; */
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
