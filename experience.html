@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Details</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+        .experience-section {
+            min-height: 100vh;
+            padding: 80px 5% 40px;
+            scroll-margin-top: 80px;
+        }
+
+        .experience-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid darkcyan;
+        }
+
+        .experience-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .experience-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .experience-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .experience-title h2 {
+            font-family: 'Nixie One', cursive;
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .experience-title p {
+            font-family: 'Alexandria', sans-serif;
+            font-size: 1.2em;
+            color: darkcyan;
+        }
+
+        .experience-details {
+            color: white;
+            font-family: 'Alexandria', sans-serif;
+            line-height: 1.6;
+        }
+
+        .experience-details h3 {
+            font-family: 'Nixie One', cursive;
+            font-size: 1.5em;
+            margin: 20px 0 10px;
+            color: darkcyan;
+        }
+
+        .experience-details ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .experience-details li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .experience-details li::before {
+            content: '•';
+            color: darkcyan;
+            position: absolute;
+            left: 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 25px;
+            background: transparent;
+            border: 1px solid darkcyan;
+            color: white;
+            text-decoration: none;
+            font-family: 'Nixie One', cursive;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: darkcyan;
+            box-shadow: 0 0 15px rgba(0, 139, 139, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="navigation-small">
+        <div class="navitem">
+            <a href="index.html#home">
+                <ion-icon name="home-outline"></ion-icon>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="navitem">
+            <a href="index.html#profile">
+                <ion-icon name="person-outline"></ion-icon>
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="navitem">
+            <a href="index.html#certificates">
+                <ion-icon name="ribbon-outline"></ion-icon>
+                <span>Certificates</span>
+            </a>
+        </div>
+        <div class="navitem">
+            <a href="index.html#projects">
+                <ion-icon name="library-outline"></ion-icon>
+                <span>Projects</span>
+            </a>
+        </div>
+        <div class="navitem">
+            <a href="index.html#contact">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <section id="mit" class="experience-section">
+        <div class="experience-content">
+            <div class="experience-header">
+                <div class="experience-logo">
+                    <img src="img/mit_logo_2.jpg" alt="MIT Manipal">
+                </div>
+                <div class="experience-title">
+                    <h2>MIT Manipal</h2>
+                    <p>B.Tech in Computer Science</p>
+                    <p>2019 - 2023</p>
+                </div>
+            </div>
+            <div class="experience-details">
+                <h3>Education</h3>
+                <ul>
+                    <li>Graduated with honors in Computer Science Engineering</li>
+                    <li>Specialized in AI and Machine Learning</li>
+                    <li>Maintained a strong academic record throughout the program</li>
+                </ul>
+                <h3>Key Achievements</h3>
+                <ul>
+                    <li>Led multiple AI research projects</li>
+                    <li>Participated in various hackathons and coding competitions</li>
+                    <li>Contributed to open-source projects</li>
+                </ul>
+            </div>
+            <a href="index.html#profile" class="back-button">Back to Timeline</a>
+        </div>
+    </section>
+
+    <section id="deloitte" class="experience-section">
+        <div class="experience-content">
+            <div class="experience-header">
+                <div class="experience-logo">
+                    <img src="img/deloitte_logo.jpg" alt="Deloitte">
+                </div>
+                <div class="experience-title">
+                    <h2>Deloitte</h2>
+                    <p>Data and AI Analyst</p>
+                    <p>2023 - 2024</p>
+                </div>
+            </div>
+            <div class="experience-details">
+                <h3>Role & Responsibilities</h3>
+                <ul>
+                    <li>Led AI implementation projects for enterprise clients</li>
+                    <li>Conducted comprehensive data analysis and visualization</li>
+                    <li>Developed predictive models for business insights</li>
+                </ul>
+                <h3>Key Projects</h3>
+                <ul>
+                    <li>Implemented machine learning solutions for client data analysis</li>
+                    <li>Created automated reporting systems</li>
+                    <li>Collaborated with cross-functional teams on AI initiatives</li>
+                </ul>
+            </div>
+            <a href="index.html#profile" class="back-button">Back to Timeline</a>
+        </div>
+    </section>
+
+    <section id="purdue" class="experience-section">
+        <div class="experience-content">
+            <div class="experience-header">
+                <div class="experience-logo">
+                    <img src="img/purdue_logo (2).png" alt="Purdue">
+                </div>
+                <div class="experience-title">
+                    <h2>Purdue University</h2>
+                    <p>MS in Business Analytics</p>
+                    <p>2024 - 2025</p>
+                </div>
+            </div>
+            <div class="experience-details">
+                <h3>Program Focus</h3>
+                <ul>
+                    <li>Advanced studies in Business Analytics</li>
+                    <li>Focus on AI applications in business</li>
+                    <li>Integration of technical and business skills</li>
+                </ul>
+                <h3>Areas of Study</h3>
+                <ul>
+                    <li>Advanced Analytics and Machine Learning</li>
+                    <li>Business Intelligence and Data Visualization</li>
+                    <li>Strategic Decision Making</li>
+                </ul>
+            </div>
+            <a href="index.html#profile" class="back-button">Back to Timeline</a>
+        </div>
+    </section>
+
+    <section id="prediction-guard" class="experience-section">
+        <div class="experience-content">
+            <div class="experience-header">
+                <div class="experience-logo">
+                    <img src="img/pg_logo.png" alt="Prediction Guard">
+                </div>
+                <div class="experience-title">
+                    <h2>Prediction Guard</h2>
+                    <p>AI Engineer</p>
+                    <p>Spring 2024</p>
+                </div>
+            </div>
+            <div class="experience-details">
+                <h3>Role & Responsibilities</h3>
+                <ul>
+                    <li>Developed and implemented AI models for predictive analytics</li>
+                    <li>Worked on real-time data processing systems</li>
+                    <li>Collaborated with the research team on model improvements</li>
+                </ul>
+                <h3>Key Achievements</h3>
+                <ul>
+                    <li>Improved model accuracy by 25%</li>
+                    <li>Reduced processing time by 40%</li>
+                    <li>Implemented new features for better user experience</li>
+                </ul>
+            </div>
+            <a href="index.html#profile" class="back-button">Back to Timeline</a>
+        </div>
+    </section>
+
+    <section id="care" class="experience-section">
+        <div class="experience-content">
+            <div class="experience-header">
+                <div class="experience-logo">
+                    <img src="img/care_logo.png" alt="Care.com">
+                </div>
+                <div class="experience-title">
+                    <h2>Care.com</h2>
+                    <p>AI Analyst</p>
+                    <p>Summer 2025</p>
+                </div>
+            </div>
+            <div class="experience-details">
+                <h3>Role & Responsibilities</h3>
+                <ul>
+                    <li>Analyzed user behavior patterns</li>
+                    <li>Implemented AI-driven recommendations</li>
+                    <li>Worked on improving user experience through data insights</li>
+                </ul>
+                <h3>Key Projects</h3>
+                <ul>
+                    <li>Developed recommendation algorithms</li>
+                    <li>Created user behavior analysis reports</li>
+                    <li>Implemented A/B testing frameworks</li>
+                </ul>
+            </div>
+            <a href="index.html#profile" class="back-button">Back to Timeline</a>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navigation-small').classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    document.querySelector('.hamburger-menu').classList.remove('active');
+                    document.querySelector('.navigation-small').classList.remove('active');
+                }
+            });
+        });
+
+        // Scroll to the correct section when the page loads
+        window.addEventListener('load', function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const target = document.querySelector(hash);
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }, 100);
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

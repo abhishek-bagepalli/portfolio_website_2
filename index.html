@@ -10,109 +10,352 @@
 </head>
 
 <body>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <div class="navigation-small">
         <div class="navitem">
-            <a href="#">
+            <a href="#home">
                 <ion-icon name="home-outline"></ion-icon>
+                <span>Home</span>
             </a>
         </div>
         <div class="navitem">
-            <a href="profile.html">
+            <a href="#profile">
                 <ion-icon name="person-outline"></ion-icon>
+                <span>Profile</span>
             </a>
         </div>
         <div class="navitem">
-            <a href="certificates.html">
+            <a href="#certificates">
                 <ion-icon name="ribbon-outline"></ion-icon>
+                <span>Certificates</span>
             </a>
         </div>
         <div class="navitem">
-            <a href="projects.html">
+            <a href="#projects">
                 <ion-icon name="library-outline"></ion-icon>
+                <span>Projects</span>
             </a>
         </div>
         <div class="navitem">
-            <a href="contact.html">
+            <a href="#contact">
                 <ion-icon name="call-outline"></ion-icon>
+                <span>Contact</span>
             </a>
         </div>
     </div>
     <div class="temp">
-
         <div class="list home">
-
-            <a href="#" style="box-shadow: 0 0 2vh darkcyan; border: 2px solid darkcyan;">
+            <a href="#home">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Home</a>
-
         </div>
         <div class="list active profile">
-
-            <a href="profile.html" >
-
+            <a href="#profile">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Profile</a>
         </div>
-        <div class="list certificates">
-
-            <a href="certificates.html" >
-
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Certificates</a>
-        </div>
+        
         <div class="list projects">
-
-            <a href="projects.html">
-
+            <a href="#projects">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Projects</a>
         </div>
+
+        <div class="list certificates">
+            <a href="#certificates">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Certifications</a>
+        </div>
         <div class="list contact">
-
-            <a href="contact.html">
-
+            <a href="#contact">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Contact</a>
         </div>
-
     </div>
-    <div class="container">
-        
-    <div class="homeprofile">
-        <div class="info">
-            <div class="hello">Hello! I am</div>
-            <div class="name">Abhishek Bagepalli</div>
-            <div class="more">Graduate Student at Purdue University </div>
-            <div class="moreinfo">I aim to learn 'how' to think, not 'what' to think.</div>
-            <div class="buttons">
-                <a href="./resources/cv.pdf" target="_blank">
-                    <button class="btn ">Download CV</button></a>
-                <a href="contact.html"><button class="btn ">Contact Me</button></a>
+
+    <section id="home" class="section">
+        <div class="container">
+            <div class="homeprofile">
+                <div class="myimage">
+                    <img src="img/me_gc_4.jpeg" alt="">
+                </div>
+                <div class="info">
+                    <div class="name">
+                        <span class="first-name">Abhishek</span>
+                        <span class="last-name">Bagepalli</span>
+                    </div>
+                    <div class="role">
+                        <span class="typing-text">AI Engineer & Business Analyst</span>
+                    </div>
+                    <div class="about-text">
+                        I strive to provide technical innovation and business value. Currently pursuing advanced studies while actively contributing to AI-driven solutions.
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/abhishek-bagepalli/" target="_blank" rel="noopener">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abhishek-bagepalli/" target="_blank" rel="noopener">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="mailto:abagepal@purdue.edu">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                        <a href="resources/Abhishek_resume_V11.pdf" target="_blank" rel="noopener">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="myimage">
-            <img src="img/me_final_2.jpeg" alt="">
+    <section id="profile" class="section">
+        <div class="timeline-container">
+            <div class="timeline">
+                <!-- Education -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-front">
+                            <div class="timeline-logo">
+                                <img src="img/mit_logo_2.jpg" alt="MIT Manipal">
+                            </div>
+                            <h3>MAHE, Manipal</h3>
+                            <p>B.Tech in Computer Science</p>
+                            <span class="year">2019 - 2023</span>
+                        </div>
+                        <div class="timeline-back">
+                            <a href="experience.html#mit" class="more-info-link">More Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deloitte -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-front">
+                            <div class="timeline-logo">
+                                <img src="img/deloitte_logo.jpg" alt="Deloitte">
+                            </div>
+                            <h3>Deloitte</h3>
+                            <p>Data and AI Analyst</p>
+                            <span class="year">2023 - 2024</span>
+                        </div>
+                        <div class="timeline-back">
+                            <a href="experience.html#deloitte" class="more-info-link">More Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Purdue -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-front">
+                            <div class="timeline-logo">
+                                <img src="img/purdue_logo (2).png" alt="Purdue">
+                            </div>
+                            <h3>Purdue University</h3>
+                            <p>MS in Business Analytics</p>
+                            <span class="year">2024 - 2025</span>
+                        </div>
+                        <div class="timeline-back">
+                            <a href="experience.html#purdue" class="more-info-link">More Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prediction Guard -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-front">
+                            <div class="timeline-logo">
+                                <img src="img/pg_logo.png" alt="Prediction Guard">
+                            </div>
+                            <h3>Prediction Guard</h3>
+                            <p>AI Engineer</p>
+                            <span class="year">Spring 2024</span>
+                        </div>
+                        <div class="timeline-back">
+                            <a href="experience.html#prediction-guard" class="more-info-link">More Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Care.com -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-front">
+                            <div class="timeline-logo">
+                                <img src="img/care_logo.png" alt="Care.com">
+                            </div>
+                            <h3>Care.com</h3>
+                            <p>AI Analyst</p>
+                            <span class="year">Summer 2025</span>
+                        </div>
+                        <div class="timeline-back">
+                            <a href="experience.html#care" class="more-info-link">More Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Information Tiles Below Timeline -->
+                <div class="timeline-info-container">
+                    <!-- MIT Info -->
+                    <div class="timeline-info">
+                        <div class="info-content">
+                            <p>Published a paper on AdaGrad family of algorithms and another paper on preedicting SLA violations in cloud computing. </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Deloitte Info -->
+                    <div class="timeline-info">
+                        <div class="info-content">
+                            <p>Forecasting Deloitte's cloud operating costs, Data warehousing, Website development and dashboarding.</p>
+                        </div>
+                    </div>
+
+                    <!-- Purdue Info -->
+                    <div class="timeline-info">
+                        <div class="info-content">
+                            <p>Worked as teaching assistant for 5 courses, published a paper on benchmarking LLMs, graduated with honors.</p>
+                        </div>
+                    </div>
+
+                    <!-- Prediction Guard Info -->
+                    <div class="timeline-info">
+                        <div class="info-content">
+                            <p>At this startup, I built a sales agent and benchmarked their LLM offerings for sales.</p>
+                        </div>
+                    </div>
+
+                    <!-- Care.com Info -->
+                    <div class="timeline-info">
+                        <div class="info-content">
+                            <p>Leveraging LLMs to generate documentation for legacy codebase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id="projects" class="section">
+        <!-- Projects content will go here -->
+    </section>
+
+    <section id="certificates" class="section">
+        <!-- Certificates content will go here -->
+    </section>
+
+    
+
+    <section id="contact" class="section">
+        <!-- Contact content will go here -->
+    </section>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</div>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navigation-small').classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    document.querySelector('.hamburger-menu').classList.remove('active');
+                    document.querySelector('.navigation-small').classList.remove('active');
+                }
+            });
+        });
+
+        // Handle timeline tile flips on mobile
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            const content = item.querySelector('.timeline-content');
+            const moreInfoLink = item.querySelector('.more-info-link');
+
+            item.addEventListener('click', function(e) {
+                // Prevent click if it's on the More Info link
+                if (e.target === moreInfoLink || moreInfoLink.contains(e.target)) {
+                    return;
+                }
+                
+                // Toggle the flipped class
+                content.classList.toggle('flipped');
+            });
+        });
+
+        // Timeline animation
+        function animateTimeline() {
+            const timeline = document.querySelector('.timeline');
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const timelineInfos = document.querySelectorAll('.timeline-info');
+            
+            if (!timeline) return;
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Remove animate class first to reset the animation
+                        timelineItems.forEach(item => {
+                            item.classList.remove('animate');
+                            // Force a reflow
+                            void item.offsetWidth;
+                        });
+                        timelineInfos.forEach(info => {
+                            info.classList.remove('animate');
+                            // Force a reflow
+                            void info.offsetWidth;
+                        });
+                        
+                        // Add animate class to trigger the animation
+                        timelineItems.forEach(item => {
+                            item.classList.add('animate');
+                        });
+                        timelineInfos.forEach(info => {
+                            info.classList.add('animate');
+                        });
+                    }
+                });
+            }, {
+                threshold: 0.2 // Trigger when 20% of the timeline is visible
+            });
+
+            observer.observe(timeline);
+        }
+
+        // Initialize timeline animation
+        window.addEventListener('load', animateTimeline);
+    </script>
 </body>
 
 </html>
