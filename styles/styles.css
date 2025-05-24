@@ -530,7 +530,7 @@ hr {
 }
 
 .navigation-small .navitem a:hover {
-    background: rgba(0, 139, 139, 0.2);
+    background: rgba(219, 7, 7, 0.2);
     color: cyan;
     transform: translateY(-2px);
 }
@@ -1161,7 +1161,7 @@ hr {
 
     .navigation-small {
         position: fixed;
-        top: -100%;
+        top: -150%;
         left: 0;
         width: 100%;
         height: 100vh;
