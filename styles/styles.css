@@ -1011,6 +1011,7 @@ hr {
 }
 
 .hamburger-menu {
+    
     display: none;
     position: fixed;
     top: 20px;
@@ -1150,7 +1151,7 @@ hr {
 
 @media (max-width: 1215px) {
     .hamburger-menu {
-        display: block;
+        /* display: block; */
         top: 15px;
         right: 15px;
         padding: 8px;
