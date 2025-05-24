@@ -1170,10 +1170,16 @@ hr {
 
 
 
-
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 20px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 
     .project-card {
-        max-width: 90%;
+        max-width: 500px;
         margin: 0 auto;
     }
 
@@ -1356,7 +1362,7 @@ hr {
 
     .role {
         /* border: 1px solid red; */
-        font-size: 1.4em;
+        font-size: 1.2em;
         text-align: center;
     }
 
