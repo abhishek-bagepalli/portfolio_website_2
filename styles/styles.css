@@ -494,7 +494,7 @@ hr {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.98);
+    background: rgba(2, 75, 69, 0.98);
     padding: 80px 0 20px;
     transition: top 0.3s ease-in-out;
     z-index: 9998;
@@ -516,7 +516,7 @@ hr {
 .navigation-small.active {
     top: 0;
 
-    background: rgba(0, 0, 0, 0.904);
+    background: rgba(228, 4, 4, 0.904);
 }
 
 .navigation-small .navitem {
