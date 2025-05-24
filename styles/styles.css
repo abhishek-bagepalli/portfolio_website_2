@@ -489,18 +489,6 @@ hr {
 
 .navigation-small {
     display: none;
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(2, 75, 69, 0.98);
-    padding: 80px 0 20px;
-    transition: top 0.3s ease-in-out;
-    z-index: 9998;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
 }
 
 .navigation-small::before {
@@ -516,7 +504,7 @@ hr {
 .navigation-small.active {
     top: 0;
 
-    background: rgba(228, 4, 4, 0.904);
+    background: rgba(0, 0, 0, 0.904);
 }
 
 .navigation-small .navitem {
@@ -1171,6 +1159,21 @@ hr {
         /* padding-top: 80px; */
     }
 
+    .navigation-small {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.98);
+        padding: 80px 0 20px;
+        transition: top 0.3s ease-in-out;
+        z-index: 9998;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
     .container {
         width: 100%;
         margin-top: 60px;
@@ -1189,11 +1192,12 @@ hr {
         align-items: center;
     }
 
-    .myimage {
+    /* .myimage {
         width: 100%;
         margin: 20px auto;
         padding: 0;
-    }
+        padding-top: 40vh;
+    } */
 
     .myimage img {
         width: 250px;
@@ -1520,6 +1524,7 @@ hr {
         width: 100%;
         margin: 0 auto;
         padding: 0;
+        padding-top: 10vh;
     }
 
     .myimage img {
