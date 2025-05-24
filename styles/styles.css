@@ -1167,7 +1167,7 @@ hr {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding-top: 80px;
+        /* padding-top: 80px; */
     }
 
     .container {
@@ -1176,7 +1176,7 @@ hr {
     }
 
     .temp {
-        display: none;
+        display: none !important;
     }
 
     .homeprofile {
