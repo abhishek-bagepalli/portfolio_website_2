@@ -1739,7 +1739,7 @@ hr {
     display: flex;
     flex-direction: column;
     height: 100%;
-    border: 1px solid cyan;
+    border: 1px solid darkcyan;
     position: relative;
 }
 
@@ -1833,7 +1833,7 @@ hr {
 }
 
 .project-summary {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.678);
     font-size: 1em;
     margin-bottom: 15px;
     text-align: center;
@@ -1856,7 +1856,7 @@ hr {
     border-radius: 15px;
     font-size: 0.9em;
     font-family: 'Alexandria', sans-serif;
-    border: 1px solid cyan;
+    border: 1px solid darkcyan;
 }
 
 .project-buttons {
@@ -1921,7 +1921,7 @@ hr {
         top: 0;
         transform: translateX(-50%);
         background-size: 100% 200%;
-        animation: timelineFlowVertical 3s linear infinite;
+        /* animation: timelineFlowVertical 3s linear infinite; */
     }
 
     @keyframes timelineFlowVertical {
