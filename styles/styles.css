@@ -1,3 +1,8 @@
+/* Test style to verify CSS loading */
+html {
+    background-color: #000000;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap');
@@ -14,7 +19,7 @@
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/bg.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../bg.png');
     background-attachment: fixed;
     opacity: 100;
     width: 100%;
