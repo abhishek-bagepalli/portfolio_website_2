@@ -525,11 +525,13 @@ hr {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -100;
 }
 
 .navigation-small.active {
     top: 0;
+
+    background: rgba(0, 0, 0, 0.904);
 }
 
 .navigation-small .navitem {
@@ -570,18 +572,21 @@ hr {
 }
 
 .homeprofile {
+    /* border: 1px solid red; */
     color: white;
     width: 90%;
     margin: 10vh auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: 'Nixie One', cursive;
     position: relative;
     z-index: 1;
 }
 
 .info {
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -593,43 +598,30 @@ hr {
     margin-bottom: 15px;
 }
 
-.name {
-    font-weight: 500;
-    font-size: 8vh;
-    letter-spacing: 0.3vh;
-    border-bottom: 1px solid cyan;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    position: relative;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    gap: 15px;
-}
+
 
 .first-name, .last-name {
     position: relative;
 }
 
 .role {
-    font-size: 3vh;
+    /* font-size: 3vh; */
     color: #00ffff;
-    margin-bottom: 25px;
-    letter-spacing: 0.2vh;
+    /* margin-bottom: 25px; */
+    /* letter-spacing: 0.2vh; */
     text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-    height: 3vh;
+    /* height: 3vh; */
     overflow: hidden;
 }
 
 .typing-text {
-    display: inline-block;
-    position: relative;
+    /* display: inline-block; */
+    /* position: relative; */
     animation: typing 3s steps(30) forwards;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid #00ffff;
-    width: 0;
+    /* width: 0; */
 }
 
 .typing-text::after {
@@ -637,10 +629,10 @@ hr {
     position: absolute;
     right: 0;
     top: 0;
-    height: 100%;
-    width: 2px;
+    /* height: 100%; */
+    /* width: 2px; */
     background: #00ffff;
-    animation: blink 1s infinite;
+    animation: blink 0.5s infinite;
 }
 
 @keyframes typing {
@@ -657,29 +649,20 @@ hr {
     50% { opacity: 0; }
 }
 
-.more {
-    margin-top: 7vh;
-    /* margin-left: 1vh; */
-    /* text-align: center; */
-    font-size: 3.2vh;
-    letter-spacing: 0.3vh;
-}
-
-.moreinfo {
-    font-size: 2.5vh;
-    margin-top: 3vh;
-    letter-spacing: 0.2vh;
-}
 
 .social-icons {
+    /* border: 1px solid red; */
+    width: 100%;
     display: flex;
-    gap: 40px;
-    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 40px; */
+    /* margin-top: 20px; */
 }
 
 .social-icons a {
     color: white;
-    font-size: 32px;
     transition: all 0.3s ease;
 }
 
@@ -689,18 +672,19 @@ hr {
 }
 
 .myimage {
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .myimage img {
     border: 1px solid rgba(0, 139, 139, 0);
     box-shadow: 0 1px 10px cyan;
     border-radius: 1000vh;
-    height: 45vh;
+    /* height: 45vh; */
     filter: brightness(90%);
 }
 
@@ -1068,94 +1052,99 @@ hr {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-.about-text {
-    display: block;
-    font-size: 2.8vh;
-    line-height: 1.6;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    color: rgba(255, 255, 255, 0.9);
-    width: fit-content;
-    text-align: justify;
-    text-justify: inter-word;
-}
 
 @media (min-width: 1216px) {
     .homeprofile {
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
-        gap: 80px;
+        align-items: center;
+        /* gap: 80px; */
         margin: 0;
-        min-height: 100vh;
+        height: 100vh;
         padding: 5vh 5% 0;
-        padding-top: 10vh;
+        /* padding-top: 10vh; */
     }
 
     .myimage {
-        width: 45%;
+        width: 50%;
         margin: 0;
         order: 2;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        padding-top: 13vh;
-        padding-left: 13vw;
+        align-items: center;
+        /* padding-top: 13vh; */
+        margin-left: 5vw;
     }
 
     .myimage img {
-        height: 55vh;
-        width: 55vh;
-        object-fit: cover;
+        width: 100%;
+        /* object-fit: cover; */
         border-radius: 3%;
         border: 3px solid cyan;
         box-shadow: 0 0 20px rgba(0, 139, 139, 0.5);
     }
 
     .info {
-        width: 45%;
-        text-align: left;
-        padding-top: 10vh;
+        /* border: 1px solid red; */
+        /* height: 70%; */
+        width: 50%;
+        /* text-align: left; */
+        /* padding-top: 10vh; */
         order: 1;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 5vh
     }
 
     .name {
-        justify-content: flex-start;
-        margin-left: 0;
-        margin-bottom: 25px;
+        font-size: 3em;
+        letter-spacing: 0.3vh;
+        display: flex;
+        gap: 15px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+
+    }
+
+    .name {        
+        /* border: 1px solid red; */
+        justify-content: center;
+        font-size: 2.5em;
+        border-bottom: 1px solid cyan;
+        padding-bottom: 1vh;
+        width: 100%;
     }
 
     .role {
-        text-align: left;
-        margin: 35px 0;
-        height: 3vh;
+        /* border: 1px solid red; */
+        text-align: center;
+        margin: auto;
+        /* height: 3vh; */
         display: flex;
         align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
     }
 
     .about-text {
-        display: block;
-        font-size: 2.8vh;
+        width: 100%;
+        /* border: 1px solid red; */
+        font-size: 1.3em;
         line-height: 1.6;
-        margin-top: 30px;
-        margin-bottom: 40px;
         color: rgba(255, 255, 255, 0.9);
-        max-width: 600px;
-        text-align: justify;
-        text-justify: inter-word;
+        text-align: center;
+        margin: 0;
     }
 
     .social-icons {
-        justify-content: flex-start;
-        margin-top: 15px;
-        gap: 40px;
+        justify-content: space-evenly;
     }
 
     .social-icons a {
-        font-size: 35px;
+        font-size: 2.5em;
     }
 }
 
