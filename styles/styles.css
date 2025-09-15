@@ -16,6 +16,7 @@ body {
     opacity: 100;
     width: 100%;
     position: relative;
+    /* border: 2px solid red; */
 }
 
 .container {
@@ -1917,6 +1918,118 @@ hr {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+}
+
+.proud-project-content{
+    /* border: 2px solid red; */
+    margin: auto;
+    width: 90%;
+    margin-top: 15vh;
+    padding: 1%;
+
+    color: white;
+    font-family: 'Nixie One', cursive;
+    /* font-style: ; */
+}
+
+.proud-project-content h2{
+    /* border: 2px solid red; */
+    letter-spacing: 0.3vw;
+    text-align: center;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid cyan;
+    width:fit-content;
+    padding-bottom: 1vh;
+    margin: auto;
+}
+.proud-project-content h3{
+    /* border: 2px solid red; */
+    font-size: 1.4rem;
+    letter-spacing: 0.3vw;
+    text-align: center;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid cyan;
+    width:fit-content;
+    padding-bottom: 1vh;
+    margin: auto;
+}
+
+.proud-project-about{
+    /* border: 2px solid red; */
+    margin: 5vh auto;
+    text-align: center;
+}
+
+.proud-project-about{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}
+
+.proud-project-problem {
+    margin: 5vh auto;
+    /* border: .1vw solid cyan; */
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 1%;
+    
+}
+
+.proud-project-problem-content {
+    /* border: 2px solid red; */
+    /* border: .1vw solid cyan; */
+    width: 30%;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: .1vw;
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 0 .1vw .01vw cyan;
+}
+
+.proud-project-problem-content h4{
+    /* border: 2px solid red; */
+}
+
+.proud-project-problem-content ul{
+    margin-top: 1vh;
+    /* border: 2px solid red; */
+    text-align: left;
+    width: 90%;
+}
+.proud-project-problem-content ul li{
+    
+    /* border: 2px solid red; */
+    margin-top: 1vh;
+}
+
+.proud-project-impact {
+    /* border: 2px solid red; */
+    display: flex;
+    padding-top: 0;
+    box-shadow: 0 0 .1vw .01vw cyan;
+    width: fit-content;
+    padding: 3%;
+    border-radius: 1vh;
+}
+
+.proud-project-impact ul {
+    /* border: 2px solid red; */
+    margin: auto;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+}
+.proud-project-impact ul li{
+    margin-top: 2vh;
 }
 
 .project-title {

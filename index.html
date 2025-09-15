@@ -117,10 +117,10 @@
                         <span class="last-name">Bagepalli</span>
                     </div>
                     <div class="role">
-                        <span class="typing-text">AI Engineer & Business Analyst</span>
+                        <span class="typing-text">Full Stack and AI Engineer</span>
                     </div>
                     <div class="about-text">
-                        I strive to provide technical innovation with business value. Currently pursuing my Master's, while actively contributing to AI-driven solutions. Graduating Aug 2025.
+                        I strive to provide technical innovation with business value. Graduated with a masters in Business Analytics from Purdue University in Aug 2025.
                     </div>
                     <div class="social-icons">
                         <a href="https://github.com/abhishek-bagepalli/" target="_blank" rel="noopener">
@@ -144,6 +144,37 @@
     <section id="projects" class="section">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
+
+            <!-- LLM Benchmarking Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <video muted loop preload="auto">
+                        <source src="img/llm_bencmarking_demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <ion-icon name="play-circle-outline" class="play-icon"></ion-icon>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Cross Cloud Resource Manager</h3>
+                    <p class="project-summary">A multi-cloud consolidated resource platform and forecasting application. Powered by natural language querying.</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">LLMs</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="" style="pointer-events: none; opacity: 0.5;" class="project-button" target="_blank"
+                            rel="noopener">View Code</a>
+                        <a href="/deloitte-project.html" class="project-button"
+                            target="_blank" rel="noopener">View Details</a>
+                    </div>
+                </div>
+            </div>
 
             <!-- LLM Benchmarking Project -->
             <div class="project-card">
@@ -401,7 +432,7 @@
                             <div class="timeline-content">
 
                                 <h3>Deloitte USI</h3>
-                                <p>Data and AI Analyst</p>
+                                <p>AI Analyst</p>
                                 <span class="year">2023 - 2024</span>
                             </div>
                         </div>
@@ -443,7 +474,7 @@
                             <div class="timeline-content">
 
                                 <h3>Prediction Guard</h3>
-                                <p>AI Engineer</p>
+                                <p>AI Engineer Intern</p>
                                 <span class="year">Spring 2024</span>
                             </div>
                         </div>
@@ -464,7 +495,7 @@
                             <div class="timeline-content">
 
                                 <h3>Care.com</h3>
-                                <p>AI Analyst</p>
+                                <p>AI Engineer Intern</p>
                                 <span class="year">Summer 2025</span>
                             </div>
                         </div>
@@ -480,8 +511,8 @@
                     <!-- MIT Info -->
                     <div class="timeline-info">
                         <div class="info-content">
-                            <p>Published a paper on AdaGrad family of algorithms and another paper on preedicting SLA
-                                violations in cloud computing. </p>
+                            <p>Published a paper on AdaGrad family of algorithms and another paper on predicting SLA
+                                violations in the cloud. </p>
                         </div>
 
                     </div>
@@ -489,16 +520,15 @@
                     <!-- Deloitte Info -->
                     <div class="timeline-info">
                         <div class="info-content">
-                            <p>Spot award for forecasting Deloitte's cloud operating costs, data warehousing, website
-                                development and dashboarding.</p>
+                            <p>Spot award for Gen AI - integrated, cross-cloud resource management platform.</p>
                         </div>
                     </div>
 
                     <!-- Purdue Info -->
                     <div class="timeline-info">
                         <div class="info-content">
-                            <p>Worked as teaching assistant for 5 courses, published a paper on benchmarking LLMs,
-                                graduating Aug 2025 with honors.</p>
+                            <p>TA'd for 5 courses, authored papers on LLM benchmarking and community health scoring in collaboration with Microsoft.
+                                </p>
                         </div>
                     </div>
 
@@ -512,15 +542,13 @@
                     <!-- Care.com Info -->
                     <div class="timeline-info">
                         <div class="info-content">
-                            <p>Leveraging LLMs to generate documentation for legacy codebase.</p>
+                            <p>Designed automation workflows to check URL health using PlayWright scripts.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    
 
     <section id="certificates" class="section">
         <h2 class="section-title">Certificates</h2>
@@ -727,6 +755,7 @@
         document.querySelectorAll('.project-image').forEach(container => {
             const video = container.querySelector('video');
             const overlay = container.querySelector('.video-overlay');
+            const videoSrc = video.querySelector('source').src;
 
             // Set initial playback rate and ensure first frame is shown
             video.playbackRate = 1.5;
@@ -764,6 +793,16 @@
                     overlay.style.opacity = '1';
                 }
             });
+
+            // Add click event to open video in new tab
+            container.addEventListener('click', (e) => {
+                if (!e.target.closest('.video-overlay')) {
+                    window.open(videoSrc, '_blank');
+                }
+            });
+
+            // Add cursor pointer to indicate clickability
+            container.style.cursor = 'pointer';
         });
 
         // Initialize EmailJS
